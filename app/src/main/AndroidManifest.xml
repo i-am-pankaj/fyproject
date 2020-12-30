@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mathsmodule">
-        <activity android:name=".divActivity"></activity>
+        <activity android:name=".maths"></activity>
+        <activity android:name=".mathop" />
+        <activity android:name=".divActivity" />
         <activity android:name=".mulActivity" />
         <activity android:name=".subActivity" />
         <activity android:name=".addActivity" />
