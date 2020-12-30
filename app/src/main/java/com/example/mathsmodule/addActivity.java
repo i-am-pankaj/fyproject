@@ -20,12 +20,13 @@ public class addActivity extends AppCompatActivity {
         String msg;
         if(guess == (n1+n2)){
             msg="Hurray! Correct Answer!";
+            fun();
         }
         else{
             msg="Wrong Answer!!!!";
         }
 
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
 
     }
 
@@ -34,6 +35,10 @@ public class addActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        fun();
+    }
+
+    public void fun(){
         Random rand1 = new Random();
         Random rand2 = new Random();
         n1 = rand1.nextInt(50)+1;
@@ -43,7 +48,5 @@ public class addActivity extends AppCompatActivity {
         textview1.setText(Integer.toString(n1));
         TextView textview2 = findViewById(R.id.atextView2);
         textview2.setText(Integer.toString(n2));
-
-
     }
 }
