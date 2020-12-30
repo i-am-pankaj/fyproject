@@ -26,7 +26,7 @@ public class mulActivity extends AppCompatActivity {
             msg="Wrong Answer!!!!";
         }
 
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
 
     }
 
