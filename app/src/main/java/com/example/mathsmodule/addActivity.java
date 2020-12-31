@@ -15,18 +15,18 @@ public class addActivity extends AppCompatActivity {
 
     public void sum(View view){
 
-        EditText editText = findViewById(R.id.aeditTextTextPersonName2);
+        EditText editText = (EditText) findViewById(R.id.aeditTextTextPersonName2);
         int guess = Integer.parseInt(editText.getText().toString());
         String msg;
         if(guess == (n1+n2)){
             msg="Hurray! Correct Answer!";
+            Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
+            fun();
         }
-        else{
-            msg="Wrong Answer!!!!";
+        else {
+            msg = "Wrong Answer!!!!";
+            Toast.makeText(this, msg, Toast.LENGTH_LONG).show();
         }
-
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
-
     }
 
     @Override
@@ -34,6 +34,10 @@ public class addActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_add);
 
+        fun();
+    }
+
+    public void fun(){
         Random rand1 = new Random();
         Random rand2 = new Random();
         n1 = rand1.nextInt(50)+1;
@@ -43,7 +47,5 @@ public class addActivity extends AppCompatActivity {
         textview1.setText(Integer.toString(n1));
         TextView textview2 = findViewById(R.id.atextView2);
         textview2.setText(Integer.toString(n2));
-
-
     }
 }
