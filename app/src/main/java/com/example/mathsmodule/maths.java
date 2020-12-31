@@ -14,12 +14,21 @@ public class maths extends AppCompatActivity {
         setContentView(R.layout.activity_maths);
 
         Button btn = findViewById(R.id.button5);
+        Button tbtn = findViewById(R.id.button7);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i= new Intent(maths.this,mathop.class);
                 startActivity(i);
+            }
+        });
+
+        tbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent t = new Intent(maths.this,tab.class);
+                startActivity(t);
             }
         });
     }
