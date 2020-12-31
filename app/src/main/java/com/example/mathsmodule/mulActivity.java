@@ -19,13 +19,14 @@ public class mulActivity extends AppCompatActivity {
         int guess = Integer.parseInt(editText.getText().toString());
         String msg;
         if(guess == (n1*n2)){
+            fun();
             msg="Hurray! Correct Answer!";
         }
         else{
             msg="Wrong Answer!!!!";
         }
 
-        Toast.makeText(this,msg,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,msg,Toast.LENGTH_LONG).show();
 
     }
 
@@ -34,6 +35,10 @@ public class mulActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_mul);
 
+        fun();
+    }
+
+    public void fun(){
         Random rand1 = new Random();
         Random rand2 = new Random();
         n1 = rand1.nextInt(11);
@@ -43,7 +48,5 @@ public class mulActivity extends AppCompatActivity {
         textview1.setText(Integer.toString(n1));
         TextView textview2 = findViewById(R.id.mtextView2);
         textview2.setText(Integer.toString(n2));
-
-
     }
 }

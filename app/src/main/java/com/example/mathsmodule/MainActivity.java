@@ -18,43 +18,12 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button abtn = findViewById(R.id.button);
-        abtn.setOnClickListener(new View.OnClickListener(){
-
+        Button btn = findViewById(R.id.button6);
+        btn.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                Intent a = new Intent(MainActivity.this,addActivity.class);
+                Intent a = new Intent(MainActivity.this,maths.class);
                 startActivity(a);
-            }
-        });
-
-        Button sbtn = findViewById(R.id.button2);
-        sbtn.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent s = new Intent(MainActivity.this,subActivity.class);
-                startActivity(s);
-            }
-        });
-
-        Button mbtn = findViewById(R.id.button3);
-        mbtn.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent m = new Intent(MainActivity.this,mulActivity.class);
-                startActivity(m);
-            }
-        });
-
-        Button dbtn = findViewById(R.id.button4);
-        dbtn.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                Intent d = new Intent(MainActivity.this,divActivity.class);
-                startActivity(d);
             }
         });
     }
