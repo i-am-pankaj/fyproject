@@ -16,6 +16,7 @@ public class maths extends AppCompatActivity {
         Button btn = findViewById(R.id.button5);
         Button tbtn = findViewById(R.id.button7);
         Button cbtn = findViewById(R.id.button8);
+        Button kdzbtn = findViewById(R.id.button9);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -38,6 +39,14 @@ public class maths extends AppCompatActivity {
             public void onClick(View v) {
                 Intent c = new Intent(maths.this,counts.class);
                 startActivity(c);
+            }
+        });
+
+        kdzbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent kdz = new Intent(maths.this,imop.class);
+                startActivity(kdz);
             }
         });
     }

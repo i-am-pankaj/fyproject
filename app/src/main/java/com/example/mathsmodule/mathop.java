@@ -52,6 +52,5 @@ public class mathop extends AppCompatActivity {
                 startActivity(d);
             }
         });
-
     }
 }

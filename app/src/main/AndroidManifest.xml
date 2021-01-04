@@ -5,11 +5,15 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Mathsmodule"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mathsmodule">
-        <activity android:name=".counts"></activity>
+        <activity android:name=".NumberList"></activity>
+        <activity android:name=".PlusList" />
+        <activity android:name=".MinusList" />
+        <activity android:name=".imop" />
+        <activity android:name=".counts" />
         <activity android:name=".tab" />
         <activity android:name=".maths" />
         <activity android:name=".mathop" />
