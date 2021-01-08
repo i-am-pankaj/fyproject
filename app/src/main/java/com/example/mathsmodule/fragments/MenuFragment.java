@@ -34,11 +34,11 @@ public class MenuFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.menu_fragment, container, false);
-		mTitle = (ImageView) view.findViewById(R.id.title);
+		//mTitle = (ImageView) view.findViewById(R.id.title);
 		mStartGameButton = (ImageView) view.findViewById(R.id.start_game_button);
-		mSettingsGameButton = (ImageView) view.findViewById(R.id.settings_game_button);
-		mSettingsGameButton.setSoundEffectsEnabled(false);
-		mSettingsGameButton.setOnClickListener(new View.OnClickListener() {
+		//mSettingsGameButton = (ImageView) view.findViewById(R.id.settings_game_button);
+		//mSettingsGameButton.setSoundEffectsEnabled(false);
+		/*SettingsGameButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				PopupManager.showPopupSettings();
@@ -50,7 +50,7 @@ public class MenuFragment extends Fragment {
 			public void onClick(View v) {
 				Toast.makeText(getActivity(), "Leaderboards will be available in the next game updates", Toast.LENGTH_LONG).show();
 			}
-		});
+		});*/
 		mStartButtonLights = (ImageView) view.findViewById(R.id.start_game_button_lights);
 		mTooltip = (ImageView) view.findViewById(R.id.tooltip);
 		mStartGameButton.setOnClickListener(new View.OnClickListener() {
