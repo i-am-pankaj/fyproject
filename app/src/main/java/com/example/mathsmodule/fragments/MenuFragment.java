@@ -6,7 +6,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +14,11 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
-import android.widget.Toast;
+
 import com.example.mathsmodule.R;
 import com.example.mathsmodule.common.Music;
 import com.example.mathsmodule.common.Shared;
 import com.example.mathsmodule.events.ui.StartEvent;
-import com.example.mathsmodule.ui.PopupManager;
 import com.example.mathsmodule.utils.Utils;
 
 public class MenuFragment extends Fragment {
