@@ -4,11 +4,16 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/icon"
-        android:label="Child Learning App"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Mathsmodule"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Mathsmodule" >
+        android:theme="@style/Theme.Mathsmodule">
+        <activity android:name=".NumberList"></activity>
+        <activity android:name=".PlusList" />
+        <activity android:name=".MinusList" />
+        <activity android:name=".imop" />
+        <activity android:name=".counts" />
         <activity android:name=".tab" />
         <activity android:name=".maths" />
         <activity android:name=".mathop" />
