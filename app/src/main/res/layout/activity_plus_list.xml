@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlusList">
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/number_one"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_one"
+                />
+            <ImageView
+                android:id="@+id/number_two"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_two"
+                />
+            <ImageView
+                android:id="@+id/number_three"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_three"
+                />
+            <ImageView
+                android:id="@+id/number_four"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_four"
+                />
+            <ImageView
+                android:id="@+id/number_five"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_five"
+                />
+            <ImageView
+                android:id="@+id/number_six"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_six"
+                />
+            <ImageView
+                android:id="@+id/number_seven"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_seven"
+                />
+            <ImageView
+                android:id="@+id/number_eight"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_eight"
+                />
+            <ImageView
+                android:id="@+id/number_nine"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_nine"
+                />
+            <ImageView
+                android:id="@+id/number_ten"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_ten"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <ImageView
+        android:id="@+id/getPlus"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:src="@drawable/plus"
+        />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/number_one1"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_one"
+                />
+            <ImageView
+                android:id="@+id/number_two2"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_two"
+                />
+            <ImageView
+                android:id="@+id/number_three3"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_three"
+                />
+            <ImageView
+                android:id="@+id/number_four4"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_four"
+                />
+            <ImageView
+                android:id="@+id/number_five5"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_five"
+                />
+            <ImageView
+                android:id="@+id/number_six6"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_six"
+                />
+            <ImageView
+                android:id="@+id/number_seven7"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_seven"
+                />
+            <ImageView
+                android:id="@+id/number_eight8"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_eight"
+                />
+            <ImageView
+                android:id="@+id/number_nine9"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_nine"
+                />
+            <ImageView
+                android:id="@+id/number_ten10"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:src="@drawable/number_ten"
+                />
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="6dp"
+        >
+
+        <TextView
+            android:id="@+id/num_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:text="+"
+            android:layout_gravity="center"
+            />
+        <TextView
+            android:id="@+id/num_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="28sp"
+            android:layout_gravity="center"
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/res1"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+
+        <ImageView
+            android:id="@+id/res2"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,28 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.mathsmodule">
+    package="com.example.mathsmodule" >
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="Child Learning App"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mathsmodule">
-        <activity android:name=".tab"></activity>
+        <provider
+            android:name="com.example.mathsmodule.drawingdomain.provider.GenericFileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+        <activity android:name=".NumberList"></activity>
+        <activity android:name=".PlusList" />
+        <activity android:name=".MinusList" />
+        <activity android:name=".imop" />
+        <activity android:name=".counts" />
+        <activity android:name=".tab" />
         <activity android:name=".maths" />
         <activity android:name=".mathop" />
         <activity android:name=".divActivity" />
         <activity android:name=".mulActivity" />
         <activity android:name=".subActivity" />
         <activity android:name=".addActivity" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".DrawingModule"
+            android:label="Drawing"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".MemoryGame"
+            android:label="@string/app_name"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
+
 
 </manifest>
