@@ -6,7 +6,7 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.os.Bundle;
-import android.support.v4.app.Fragment;
+import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,12 +14,11 @@ import android.view.animation.AccelerateDecelerateInterpolator;
 import android.view.animation.AccelerateInterpolator;
 import android.view.animation.BounceInterpolator;
 import android.widget.ImageView;
-import android.widget.Toast;
+
 import com.example.mathsmodule.R;
 import com.example.mathsmodule.common.Music;
 import com.example.mathsmodule.common.Shared;
 import com.example.mathsmodule.events.ui.StartEvent;
-import com.example.mathsmodule.ui.PopupManager;
 import com.example.mathsmodule.utils.Utils;
 
 public class MenuFragment extends Fragment {
@@ -34,11 +33,11 @@ public class MenuFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		View view = inflater.inflate(R.layout.menu_fragment, container, false);
-		mTitle = (ImageView) view.findViewById(R.id.title);
+		//mTitle = (ImageView) view.findViewById(R.id.title);
 		mStartGameButton = (ImageView) view.findViewById(R.id.start_game_button);
-		mSettingsGameButton = (ImageView) view.findViewById(R.id.settings_game_button);
-		mSettingsGameButton.setSoundEffectsEnabled(false);
-		mSettingsGameButton.setOnClickListener(new View.OnClickListener() {
+		//mSettingsGameButton = (ImageView) view.findViewById(R.id.settings_game_button);
+		//mSettingsGameButton.setSoundEffectsEnabled(false);
+		/*SettingsGameButton.setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
 				PopupManager.showPopupSettings();
@@ -50,7 +49,7 @@ public class MenuFragment extends Fragment {
 			public void onClick(View v) {
 				Toast.makeText(getActivity(), "Leaderboards will be available in the next game updates", Toast.LENGTH_LONG).show();
 			}
-		});
+		});*/
 		mStartButtonLights = (ImageView) view.findViewById(R.id.start_game_button_lights);
 		mTooltip = (ImageView) view.findViewById(R.id.tooltip);
 		mStartGameButton.setOnClickListener(new View.OnClickListener() {

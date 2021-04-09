@@ -2,14 +2,13 @@ package com.example.mathsmodule;
 
 import android.graphics.Bitmap;
 import android.os.Bundle;
-import android.support.v4.app.FragmentActivity;
+import androidx.fragment.app.FragmentActivity;
 import android.widget.ImageView;
 
 import com.example.mathsmodule.common.Shared;
 import com.example.mathsmodule.engine.Engine;
 import com.example.mathsmodule.engine.ScreenController;
 import com.example.mathsmodule.engine.ScreenController.Screen;
-import com.example.mathsmodule.events.Event;
 import com.example.mathsmodule.events.EventBus;
 import com.example.mathsmodule.events.ui.BackGameEvent;
 import com.example.mathsmodule.ui.PopupManager;
