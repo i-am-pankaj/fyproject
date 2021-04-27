@@ -2,9 +2,11 @@ package com.example.mathsmodule;
 
 import android.content.Intent;
 import android.os.Bundle;
-import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+
+import androidx.appcompat.app.AppCompatActivity;
+import com.example.mathsmodule.drawingtest.ui.activity.drawingmodule;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -38,7 +40,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent c = new Intent(MainActivity.this,
-                        DrawingModule.class);
+                        drawingmodule.class);
                 startActivity(c);
             }
         });

@@ -1,17 +1,24 @@
-package com.example.mathsmodule;
+package com.example.mathsmodule.drawingtest.ui.activity;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import androidx.core.content.ContextCompat;
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
 import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+
+import com.example.mathsmodule.R;
+import com.example.mathsmodule.drawingtest.domain.manager.FileManager;
+import com.example.mathsmodule.drawingtest.domain.manager.PermissionManager;
+import com.example.mathsmodule.drawingtest.ui.component.DrawingView;
+import com.example.mathsmodule.drawingtest.ui.dialog.StrokeSelectorDialog;
 
 import org.xdty.preference.colorpicker.ColorPickerDialog;
 import org.xdty.preference.colorpicker.ColorPickerSwatch;
@@ -20,15 +27,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-import com.example.mathsmodule.drawingdomain.manager.FileManager;
-import com.example.mathsmodule.drawingdomain.manager.PermissionManager;
-import com.example.mathsmodule.drawingui.component.DrawingView;
-import com.example.mathsmodule.drawingui.dialog.StrokeSelectorDialog;
+public class drawingmodule extends AppCompatActivity {
 
-
-public class DrawingModule extends AppCompatActivity
-{
-    @BindView(R.id.main_drawing_view) DrawingView mDrawingView;
+    @BindView(R.id.main_drawing_view)
+    DrawingView mDrawingView;
     @BindView(R.id.main_fill_iv) ImageView mFillBackgroundImageView;
     @BindView(R.id.main_color_iv) ImageView mColorImageView;
     @BindView(R.id.main_stroke_iv) ImageView mStrokeImageView;
@@ -44,7 +46,7 @@ public class DrawingModule extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.drawingmodule);
+        setContentView(R.layout.activity_main);
 
         ButterKnife.bind(this);
 
@@ -168,8 +170,8 @@ public class DrawingModule extends AppCompatActivity
         intent.setAction(Intent.ACTION_SEND);
         intent.setType("image/*");
 
-        intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "");
-        intent.putExtra(android.content.Intent.EXTRA_TEXT, "");
+        intent.putExtra(Intent.EXTRA_SUBJECT, "");
+        intent.putExtra(Intent.EXTRA_TEXT, "");
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivity(Intent.createChooser(intent, "Share Image"));
@@ -234,3 +236,4 @@ public class DrawingModule extends AppCompatActivity
         mDrawingView.redo();
     }
 }
+

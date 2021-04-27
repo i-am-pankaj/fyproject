@@ -5,13 +5,15 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DrawingModule">
+    tools:context=".drawingtest.ui.activity.drawingmodule">
 
-    <com.example.mathsmodule.drawingui.component.DrawingView
+
+    <com.example.mathsmodule.drawingtest.ui.component.DrawingView
         android:id="@+id/main_drawing_view"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="0.85"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
