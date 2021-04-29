@@ -27,10 +27,9 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 
-public class drawingmodule extends AppCompatActivity {
-
-    @BindView(R.id.main_drawing_view)
-    DrawingView mDrawingView;
+public class drawing extends AppCompatActivity
+{
+    @BindView(R.id.main_drawing_view) DrawingView mDrawingView;
     @BindView(R.id.main_fill_iv) ImageView mFillBackgroundImageView;
     @BindView(R.id.main_color_iv) ImageView mColorImageView;
     @BindView(R.id.main_stroke_iv) ImageView mStrokeImageView;
@@ -46,7 +45,7 @@ public class drawingmodule extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.drawing);
 
         ButterKnife.bind(this);
 
@@ -170,8 +169,8 @@ public class drawingmodule extends AppCompatActivity {
         intent.setAction(Intent.ACTION_SEND);
         intent.setType("image/*");
 
-        intent.putExtra(Intent.EXTRA_SUBJECT, "");
-        intent.putExtra(Intent.EXTRA_TEXT, "");
+        intent.putExtra(android.content.Intent.EXTRA_SUBJECT, "");
+        intent.putExtra(android.content.Intent.EXTRA_TEXT, "");
         intent.putExtra(Intent.EXTRA_STREAM, uri);
         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         startActivity(Intent.createChooser(intent, "Share Image"));
@@ -236,4 +235,3 @@ public class drawingmodule extends AppCompatActivity {
         mDrawingView.redo();
     }
 }
-

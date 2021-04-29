@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.example.mathsmodule" >
+    package="com.example.mathsmodule">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -13,17 +13,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mathsmodule">
+        <activity android:name=".english_module.english_alphabetimg"></activity>
+        <activity android:name=".english_module.english_alphabet" />
+        <activity android:name=".english_module.englishmusic" />
+
         <provider
-            android:name="com.example.mathsmodule.drawingtest.domain.provider.GenericFileProvider"
+            android:name=".drawingtest.domain.provider.GenericFileProvider"
             android:authorities="${applicationId}.provider"
             android:exported="false"
             android:grantUriPermissions="true"
-            tools:ignore="Instantiatable">
+            tools:ignore="WrongManifestParent">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/provider_paths"/>
+                android:resource="@xml/provider_paths" />
         </provider>
-        <activity android:name=".NumberList"></activity>
+
+        <activity android:name=".englishop" />
+        <activity android:name=".drawing" />
+        <activity android:name=".NumberList" />
         <activity android:name=".PlusList" />
         <activity android:name=".MinusList" />
         <activity android:name=".imop" />
@@ -35,20 +42,17 @@
         <activity android:name=".mulActivity" />
         <activity android:name=".subActivity" />
         <activity android:name=".addActivity" />
-        <activity android:name=".drawingtest.ui.activity.drawingmodule"/>
-        <activity android:name=".MemoryGame"
+        <activity
+            android:name=".MemoryGame"
             android:label="@string/app_name"
-            android:screenOrientation="landscape" >
-        </activity>
-        <activity android:name=".MainActivity" >
+            android:screenOrientation="landscape" />
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
     </application>
-
 
 </manifest>

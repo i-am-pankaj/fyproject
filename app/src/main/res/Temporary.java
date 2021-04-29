@@ -1,6 +1,4 @@
-/**
- * Created by Dimitris on 13/9/2017.
- */
+
 
 public class Temporary {
     int minutes = 123 / (60 * 1000);

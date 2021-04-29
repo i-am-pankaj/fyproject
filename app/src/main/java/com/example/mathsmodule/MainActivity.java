@@ -6,7 +6,6 @@ import android.view.View;
 import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
-import com.example.mathsmodule.drawingtest.ui.activity.drawingmodule;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -39,9 +38,17 @@ public class MainActivity extends AppCompatActivity {
         btn2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent c = new Intent(MainActivity.this,
-                        drawingmodule.class);
+                Intent c = new Intent(MainActivity.this, drawing.class);
                 startActivity(c);
+            }
+        });
+
+        Button btn3 = findViewById(R.id.puneetbutton11);
+        btn3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent d = new Intent(MainActivity.this, englishop.class);
+                startActivity(d);
             }
         });
 
