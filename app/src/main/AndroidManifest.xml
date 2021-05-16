@@ -13,7 +13,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Mathsmodule">
-        <activity android:name=".english_module.english_alphabetimg"></activity>
+        <activity android:name=".shapedetection.views.shape"/>
+        <activity android:name=".english_module.english_alphabetimg" />
         <activity android:name=".english_module.english_alphabet" />
         <activity android:name=".english_module.englishmusic" />
 
@@ -27,7 +28,6 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/provider_paths" />
         </provider>
-
         <activity android:name=".englishop" />
         <activity android:name=".drawing" />
         <activity android:name=".NumberList" />

@@ -7,6 +7,8 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.mathsmodule.shapedetection.views.shape;
+
 public class MainActivity extends AppCompatActivity {
 
 
@@ -49,6 +51,15 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent d = new Intent(MainActivity.this, englishop.class);
                 startActivity(d);
+            }
+        });
+
+        Button btn4 = findViewById(R.id.puneetshapebutton);
+        btn4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent e = new Intent(MainActivity.this, shape.class);
+                startActivity(e);
             }
         });
 
